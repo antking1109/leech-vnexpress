@@ -26,6 +26,7 @@
         }
         #content{
             margin: 2% 10%;
+            text-align:center;
         }
         #footer{
             background-color: black;
@@ -45,15 +46,8 @@
             if($_SERVER['REQUEST_METHOD'] != 'POST'){
         ?>
             <form method='post'>
-                <table>
-                    <tr>
-                        <td>Link cần leech: </td>
-                        <td><input type="text" name="url"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" value="Leech"></td>
-                    </tr>
-                </table>
+                Link cần leech :<input type="text" name="url">
+                <br/><br/><input type="submit" value="Leech">
             </form>
         <?php
             }else{
